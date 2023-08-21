@@ -462,7 +462,7 @@ export default function Home({ publications }) {
                     About
                   </button>
                 </li>
-                <li className="z-50 hidden mx-5 list-none lg:inline-block">
+                {/*<li className="z-50 hidden mx-5 list-none lg:inline-block">
                   <button
                     href="#"
                     className={`nav-item ${
@@ -474,7 +474,7 @@ export default function Home({ publications }) {
                   >
                     Skills
                   </button>
-                </li>
+                  </li>*/}
                 <li className="z-50 hidden mx-5 list-none lg:inline-block">
                   <button
                     href="#"
@@ -500,7 +500,7 @@ export default function Home({ publications }) {
                       scrollTo(blogRef.current);
                     }}
                   >
-                    Blog
+                    Training
                   </button>
                 </li>
                 <li className="z-50 hidden mx-5 list-none lg:inline-block">
@@ -607,9 +607,9 @@ export default function Home({ publications }) {
                 </p>
                 <a
                   href={`mailto:akshath@luup.ai`}
-                    className="btn-brand btn-md group"
+                    className="mt-4 btn-brand btn-lg group"
                   >
-                    Contact us: akshath@luup.ai
+                  Contact Sales: sales@luup.ai 
                   </a>
 
                 <br></br>
@@ -645,16 +645,16 @@ Whether you're a business seeking smarter solutions, an individual aspiring to m
                   </p>
                   <p></p>
                   <p className="text-lg">
-                  1) Services Tailored to Your Needs: Every journey with AI is unique, and our range of services ensures that your specific needs are met. We offer everything from strategy development to full-blown AI integration, providing the exact tools you need to thrive in a data-driven world.
+                  Services Tailored to Your Needs: Every journey with AI is unique, and our range of services ensures that your specific needs are met. We offer everything from strategy development to full-blown AI integration, providing the exact tools you need to thrive in a data-driven world.
                   </p>
                   <p className="text-lg">
-                  2) Courses to Cultivate Mastery: Education is empowerment. Our comprehensive courses, designed by industry experts, offer deep insights into the world of AI. From beginner tutorials to advanced seminars, we guide enthusiasts and professionals alike on a learning journey that demystifies AI and amplifies skills.
+                  Courses to Cultivate Mastery: Education is empowerment. Our comprehensive courses, designed by industry experts, offer deep insights into the world of AI. From beginner tutorials to advanced seminars, we guide enthusiasts and professionals alike on a learning journey that demystifies AI and amplifies skills.
                   </p>
                   <p className="text-lg">
-                  3) Cutting Edge Customer Support Automation: In today's fast-paced world, efficiency is key. Our state-of-the-art customer support automation solutions not only speed up processes but also ensure accuracy, responsiveness, and personalized service that delights customers and empowers businesses.
+                  Cutting Edge Customer Support Automation: In today's fast-paced world, efficiency is key. Our state-of-the-art customer support automation solutions not only speed up processes but also ensure accuracy, responsiveness, and personalized service that delights customers and empowers businesses.
                   </p>
                   <p className="text-lg">
-                  4) Educational Tools for Scalable Applications: Dreaming of building your own AI application? Our suite of educational tools is designed to help. These aren't just theoretical resources; they're practical platforms that enable creators to build, test, and scale applications to full production, ensuring that ideas are not just conceived but also brought to fruition.
+                  Educational Tools for Scalable Applications: Dreaming of building your own AI application? Our suite of educational tools is designed to help. These aren't just theoretical resources; they're practical platforms that enable creators to build, test, and scale applications to full production, ensuring that ideas are not just conceived but also brought to fruition.
                   </p>
                 </div>
                 <div className="flex w-full h-full mb-4 md:pl-8 md:w-2/5 md:mb-0">
@@ -663,7 +663,7 @@ Whether you're a business seeking smarter solutions, an individual aspiring to m
                     className="overflow-hidden rounded-md"
                     width={880}
                     height={880}
-                    alt={"Daniel Cranney headshot"}
+                    alt={"Luup_UI"}
                   />
                 </div>
               </div>
@@ -671,12 +671,15 @@ Whether you're a business seeking smarter solutions, an individual aspiring to m
           </section>
 
           {/* Skills */}
-          <section
+          {/*<section
             className="flex flex-col w-full px-0 md:px-20 lg:px-24 py-28 section"
             id="skills"
             ref={skillsRef}
-          >
-            <h2 className="text-5xl">Custom Integrations </h2>
+                >*/}
+
+
+
+           {/* <h2 className="text-5xl">Custom Integrations </h2>
             <hr className="bg-brand w-40 h-1.5 mt-4 mb-6 border-0"></hr>
             <div className="w-full mr-auto grid gap-4 grid-cols-4 sm:grid-cols-4 md:grid-cols-8 mt-4">
               <img
@@ -710,7 +713,8 @@ Whether you're a business seeking smarter solutions, an individual aspiring to m
               />
 
             </div>
-          </section>
+            </section>*/}
+        
 
           {/* My Work */}
           <section
@@ -767,19 +771,28 @@ Whether you're a business seeking smarter solutions, an individual aspiring to m
 
 
 
-            {/*
-            <h2 className="text-4xl text-center">Integrations</h2>
+            
+            <h2 className="text-4xl text-center">Testimonials</h2>
             <hr className="bg-brand w-40 h-1.5 mt-4 mb-6 mx-auto border-0"></hr>
             <p className="mb-16 text-lg text-center">
-              Here are some of the integrations we offer
+              Satisfied Customers 
             </p>
 
             <div className="grid grid-flow-row grid-rows-2 gap-4 grid-col-1 lg:grid-cols-3">
-              {projects.map(function (project, i) {
-                return <ProjectCard project={project} key={i} />;
-              })}
+
+
+           <ProjectCard testimonialData={{ name: "-Sridhar", image: "path_to_image.jpg", testimonial: "Thank you for this. We had been assigned a project at our company for document QnA with LLMs and this is exactly what we wanted. " }} />
+           <ProjectCard testimonialData={{ name: "-Hari", image: "path_to_image.jpg", testimonial: "As a growing business, we were looking for AI solutions that wouldn't break the bank. luup.ai not only made AI services affordable but also tailored them to fit our unique needs. Exceptional work" }} />
+           <ProjectCard testimonialData={{ name: "-Alex Thompson", image: "path_to_image.jpg", testimonial: "I always thought AI was reserved for tech giants and experts. luup.ai has greatly helped us, making AI accessible for smaller business owners like me." }} />
+           <ProjectCard testimonialData={{ name: "-Bob Young", image: "path_to_image.jpg", testimonial: "With the customer support automation that luup.ai provides, my team and I can focus more on building relationships with our clients rather than getting bogged down with repetitive queries. Efficiency has never looked this good!" }} />
+           <ProjectCard testimonialData={{ name: "-Linda Petrov", image: "path_to_image.jpg", testimonial: "This is exactly what I was waiting for" }} />
+           <ProjectCard testimonialData={{ name: "-Arjun B.", image: "path_to_image.jpg", testimonial: "This is a great service! I highly recommend it." }} />
+           <ProjectCard testimonialData={{ name: "-Akash K.", image: "path_to_image.jpg", testimonial: "Their commitment to making AI accessible to all, regardless of technical background, is truly commendable" }} />
+           <ProjectCard testimonialData={{ name: "-Vikash Chandran", image: "path_to_image.jpg", testimonial: "The transition to AI-supported customer service was seamless, thanks to luup.ai. Our customer satisfaction rates have soared, and we owe a big part of that success to their efficient automation tools" }} />
+
+
             </div>
-            */}</section>
+            </section>
 
           {/* Blog */}
           <section
@@ -840,7 +853,7 @@ Whether you're a business seeking smarter solutions, an individual aspiring to m
             <div className="flex flex-col-reverse w-full md:flex-row">
               <div className="w-full mb-4 md:pl-0 md:mb-0">
                 <p className="text-lg">
-                  We are currently involved in empowering companies and institutions with AI services
+                  We are currently focused on empowering companies and institutions with AI services
                   
                 </p>
                 <p className="text-lg">
@@ -861,30 +874,7 @@ Whether you're a business seeking smarter solutions, an individual aspiring to m
           <footer className="flex flex-col w-full px-0 py-16 md:px-20 lg:px-24 section">
             <hr className="w-full h-1 mb-16 dark:bg-white bg-dark border-0 opacity-10"></hr>
             <div className="w-8 mb-4">
-              <svg
-                id="abbe8588-8b21-44fd-a605-eb7de7f82941"
-                data-name="Layer 1"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 93.13 75.2"
-              >
-                <path
-                  className="dark:opacity-50 dark:fill-current dark:text-light fill-brand"
-                  d="M24.05,38.51,7.5,55.06a4.39,4.39,0,1,1-6.21-6.21L14.74,35.41,1.29,22A4.39,4.39,0,0,1,7.5,15.75L24.05,32.3A4.4,4.4,0,0,1,24.05,38.51Z"
-                />
-                <path
-                  className="dark:opacity-50 dark:fill-current dark:text-light fill-brand"
-                  d="M91.85,55.06a4.38,4.38,0,0,1-6.21,0L69.09,38.51a4.4,4.4,0,0,1,0-6.21L85.64,15.75A4.39,4.39,0,0,1,91.85,22L78.41,35.41,91.85,48.85A4.4,4.4,0,0,1,91.85,55.06Z"
-                />
-                <rect
-                  className="dark:opacity-50 dark:fill-current dark:text-light fill-brand"
-                  x="41.93"
-                  y="-1.17"
-                  width="8.78"
-                  height="77.54"
-                  rx="4.39"
-                  transform="translate(11.31 -10.71) rotate(15)"
-                />
-              </svg>
+
             </div>
 
             <div className="flex flex-col items-start md:flex-row">
@@ -910,9 +900,7 @@ Whether you're a business seeking smarter solutions, an individual aspiring to m
           <div className="container relative flex h-full mx-auto">
             {/* Profile Icons */}
             <div className="absolute bottom-0 items-center hidden mt-auto mr-auto text-white left-8 md:flex md:flex-col">
-              <GitHubProfile marginBottom={"mb-4"} />
               <TwitterProfile marginBottom={"mb-4"} />
-              <LinkedInProfile marginBottom={"mb-4"} />
               <div className="w-0.5 dark:bg-white bg-dark h-24 opacity-20 mt-2"></div>
             </div>
 
