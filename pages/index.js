@@ -59,6 +59,13 @@ const scrollTo = (ele) => {
   });
 };
 
+
+const handleContactClick = () => {  
+  // Open the email client
+  window.location.href = 'mailto:akshath@luup.ai';
+};
+
+
 export default function Home({ publications }) {
   const [visibleSection, setVisibleSection] = useState();
   const [scrolling, setScrolling] = useState(false);
@@ -222,10 +229,10 @@ export default function Home({ publications }) {
         }`}
       >
         <Head>
-          <title>Daniel Cranney | Frontend Developer & Designer</title>
+          <title>Luup.ai | Making AI accessible</title>
           <meta
             name="description"
-            content="The portfolio of frontend developer and designer, Daniel Cranney"
+            content="Luup.ai makes AI accessible"
           />
           <link rel="icon" href="/favicon.ico" />
         </Head>
@@ -341,10 +348,10 @@ export default function Home({ publications }) {
                 </li>
                 <li className="z-40 block py-2 mt-6 list-none lg:inline-block">
                   <a
-                    href={`mailto:danielcranney@gmail.com`}
+                    href={`mailto:akshath@luup.ai`}
                     className="text-lg btn-brand btn-lg group"
                   >
-                    Hire me
+                    Contact us
                   </a>
                 </li>
               </ul>
@@ -423,7 +430,7 @@ export default function Home({ publications }) {
             {/* Text */}
             <div className="flex items-center ml-4">
               <p className="text-lg font-semibold font-display tracking-tight dark:text-white text-darker mb-0 transition-all duration-150 ease-in-out">
-                Daniel Cranney
+                Luup.ai
               </p>
             </div>
             {/* Nav */}
@@ -478,7 +485,7 @@ export default function Home({ publications }) {
                       scrollTo(myWorkRef.current);
                     }}
                   >
-                    My Work
+                    AI builder
                   </button>
                 </li>
                 <li className="z-50 hidden mx-5 list-none lg:inline-block">
@@ -511,10 +518,10 @@ export default function Home({ publications }) {
                 </li>
                 <li className="z-50 hidden ml-5 list-none lg:inline-block">
                   <a
-                    href={`mailto:danielcranney@gmail.com`}
+                    href={`mailto:akshath@luup.ai`}
                     className="btn-brand btn-md group"
                   >
-                    Hire me
+                    Contact us
                   </a>
                 </li>
                 <li className="z-50 inline-block list-none lg:hidden group">
@@ -572,37 +579,50 @@ export default function Home({ publications }) {
             <div className="container relative flex flex-col items-start justify-center flex-grow px-0 mx-auto md:px-20 lg:px-24 section">
               <div className="w-full">
                 <span className="text-2xl font-semibold text-brand">
-                  Hello! 👋 My name is
+                👋 Welcome to 
                 </span>
 
+
                 <h1 className="mb-4 text-5xl md:text-7xl dark:text-white text-dark">
-                  Daniel Cranney
+                  Luup.ai
                 </h1>
+                
                 <h2 className="mb-4 text-3xl md:text-4xl dark:text-light text-mid">
                   <ReactTypingEffect
                     typingDelay={200}
                     speed={30}
-                    eraseSpeed={30}
+                    eraseSpeed={70}
                     eraseDelay={1500}
                     text={[
-                      `Frontend Developer`,
-                      `Designer`,
-                      `Teacher`,
-                      `Cat Dad`,
+                      `We make AI accessible to the world`,
+                      `AI Services`,
+                      `Online Courses`,
+                      `Tools for building LLM applications`,
+                      'Customer Support Automations',
                     ]}
                   />
                 </h2>
                 <p className="w-4/5 text-xl md:w-full">
-                  I design and build websites that look good, and work well.
+                  
                 </p>
+                <a
+                  href={`mailto:akshath@luup.ai`}
+                    className="btn-brand btn-md group"
+                  >
+                    Contact us: akshath@luup.ai
+                  </a>
+
+                <br></br>
+
                 <button
                   className="mt-4 btn-brand btn-lg group"
                   onClick={() => {
                     scrollTo(myWorkRef.current);
                   }}
                 >
-                  See my Work
+                  Luup no-code AI builder
                 </button>
+
               </div>
             </div>
           </main>
@@ -620,47 +640,26 @@ export default function Home({ publications }) {
               <div className="flex flex-col-reverse items-start w-full md:flex-row">
                 <div className="flex flex-col w-full md:pr-8 md:w-3/5">
                   <p className="text-lg">
-                    Hello! I&apos;m Dan and I&apos;m a frontend developer,
-                    designer and teacher from Bristol, England.
+                  Our mission is to bring AI's immense potential within everyone's reach.           
+Whether you're a business seeking smarter solutions, an individual aspiring to master the intricacies of AI, or a visionary aiming to craft applications that transform industries, Luup.ai is your catalyst.
+                  </p>
+                  <p></p>
+                  <p className="text-lg">
+                  1) Services Tailored to Your Needs: Every journey with AI is unique, and our range of services ensures that your specific needs are met. We offer everything from strategy development to full-blown AI integration, providing the exact tools you need to thrive in a data-driven world.
                   </p>
                   <p className="text-lg">
-                    After building my first website aged thirteen, I knew I
-                    wanted to work with computers and technology, and I&apos;ve
-                    never looked back.
+                  2) Courses to Cultivate Mastery: Education is empowerment. Our comprehensive courses, designed by industry experts, offer deep insights into the world of AI. From beginner tutorials to advanced seminars, we guide enthusiasts and professionals alike on a learning journey that demystifies AI and amplifies skills.
                   </p>
                   <p className="text-lg">
-                    After graduating University with a Media degree, I began
-                    freelancing as a designer, creating graphics, video content
-                    and websites for small businesses, using content management
-                    systems like Wordpress, Joomla and Squarespace.
+                  3) Cutting Edge Customer Support Automation: In today's fast-paced world, efficiency is key. Our state-of-the-art customer support automation solutions not only speed up processes but also ensure accuracy, responsiveness, and personalized service that delights customers and empowers businesses.
                   </p>
                   <p className="text-lg">
-                    In recent years, I&apos;ve been focused on programming,
-                    building a solid frontend stack and creating exciting
-                    projects that solve real-world problems.
-                  </p>
-                  <p className="text-lg">
-                    Alongside my design and development work, I run a BA Media
-                    Production degree course and a corporate video production
-                    company called{" "}
-                    <a
-                      href="http://www.wearespotlight.co.uk"
-                      target="_blank"
-                      className="underline-link"
-                      rel="noreferrer"
-                    >
-                      Spotlight Media
-                    </a>
-                    , so I like to keep busy!
-                  </p>
-                  <p className="text-lg">
-                    Take a look at my work below to see what I&apos;m working
-                    on, and get in touch if you&apos;d like to work together!
+                  4) Educational Tools for Scalable Applications: Dreaming of building your own AI application? Our suite of educational tools is designed to help. These aren't just theoretical resources; they're practical platforms that enable creators to build, test, and scale applications to full production, ensuring that ideas are not just conceived but also brought to fruition.
                   </p>
                 </div>
                 <div className="flex w-full h-full mb-4 md:pl-8 md:w-2/5 md:mb-0">
                   <Image
-                    src="/headshot-with-frame-2.jpg"
+                    src="/projects/Luup_logo.jpeg"
                     className="overflow-hidden rounded-md"
                     width={880}
                     height={880}
@@ -677,14 +676,11 @@ export default function Home({ publications }) {
             id="skills"
             ref={skillsRef}
           >
-            <h2 className="text-5xl">Skills</h2>
+            <h2 className="text-5xl">Custom Integrations </h2>
             <hr className="bg-brand w-40 h-1.5 mt-4 mb-6 border-0"></hr>
-
-            {/* Skills icons */}
             <div className="w-full mr-auto grid gap-4 grid-cols-4 sm:grid-cols-4 md:grid-cols-8 mt-4">
-              {/* HTML */}
-              <Icon
-                IconType={Html}
+              <img
+                src="/projects/Sids-Farm-Logo-1.png"
                 title="HTML"
                 width={"w-16"}
                 height={"h-16"}
@@ -698,10 +694,9 @@ export default function Home({ publications }) {
                 fixedHeight={"h-28"}
               />
 
-              {/* CSS */}
-              <Icon
-                IconType={Css}
-                title="CSS"
+            <img
+                src="/projects/Engagebay-Logo.png"
+                title="HTML"
                 width={"w-16"}
                 height={"h-16"}
                 padding={"p-0"}
@@ -714,245 +709,6 @@ export default function Home({ publications }) {
                 fixedHeight={"h-28"}
               />
 
-              {/* Tailwind */}
-              <Icon
-                IconType={Tailwind}
-                title="Tailwind"
-                width={"w-16"}
-                height={"h-16"}
-                padding={"p-0"}
-                flexDirection={"flex-col"}
-                titleMargins={"mt-4"}
-                titleSize={"text-sm sm:text-sm"}
-                marginBottom={"mb-4"}
-                marginRight={"mr-0"}
-                textTransform={"normal-case"}
-                fixedHeight={"h-28"}
-              />
-
-              {/* Javascript */}
-              <Icon
-                IconType={Javascript}
-                title="Javascript"
-                width={"w-16"}
-                height={"h-16"}
-                padding={"p-0"}
-                flexDirection={"flex-col"}
-                titleMargins={"mt-4"}
-                titleSize={"text-sm sm:text-sm"}
-                marginBottom={"mb-4"}
-                marginRight={"mr-0"}
-                textTransform={"normal-case"}
-                fixedHeight={"h-28"}
-              />
-
-              {/* React */}
-              <Icon
-                IconType={ReactJs}
-                title="React"
-                width={"w-16"}
-                height={"h-16"}
-                padding={"p-0"}
-                flexDirection={"flex-col"}
-                titleMargins={"mt-4"}
-                titleSize={"text-sm sm:text-sm"}
-                marginBottom={"mb-4"}
-                marginRight={"mr-0"}
-                textTransform={"normal-case"}
-                fixedHeight={"h-28"}
-              />
-
-              {/* Next */}
-              <Icon
-                IconType={NextJs}
-                title="Next"
-                width={"w-16"}
-                height={"h-16"}
-                padding={"p-0"}
-                flexDirection={"flex-col"}
-                titleMargins={"mt-4"}
-                titleSize={"text-sm sm:text-sm"}
-                marginBottom={"mb-4"}
-                marginRight={"mr-0"}
-                textTransform={"normal-case"}
-                fixedHeight={"h-28"}
-              />
-
-              {/* Node */}
-              <Icon
-                IconType={NodeJs}
-                title="Node"
-                width={"w-16"}
-                height={"h-16"}
-                padding={"p-0"}
-                flexDirection={"flex-col"}
-                titleMargins={"mt-4"}
-                titleSize={"text-sm sm:text-sm"}
-                marginBottom={"mb-4"}
-                marginRight={"mr-0"}
-                textTransform={"normal-case"}
-                fixedHeight={"h-28"}
-              />
-
-              {/* Express */}
-              <Icon
-                IconType={Express}
-                title="Express"
-                width={"w-16"}
-                height={"h-16"}
-                padding={"p-0"}
-                flexDirection={"flex-col"}
-                titleMargins={"mt-4"}
-                titleSize={"text-sm sm:text-sm"}
-                marginBottom={"mb-4"}
-                marginRight={"mr-0"}
-                textTransform={"normal-case"}
-                fixedHeight={"h-28"}
-              />
-
-              {/* Supabase */}
-              <Icon
-                IconType={Supabase}
-                title="Supabase"
-                width={"w-16"}
-                height={"h-16"}
-                padding={"p-0"}
-                flexDirection={"flex-col"}
-                titleMargins={"mt-4"}
-                titleSize={"text-sm sm:text-sm"}
-                marginBottom={"mb-4"}
-                marginRight={"mr-0"}
-                textTransform={"normal-case"}
-                fixedHeight={"h-28"}
-              />
-
-              {/* MongoDb */}
-              <Icon
-                IconType={MongoDb}
-                title="MongoDb"
-                width={"w-16"}
-                height={"h-16"}
-                padding={"p-0"}
-                flexDirection={"flex-col"}
-                titleMargins={"mt-4"}
-                titleSize={"text-sm sm:text-sm"}
-                marginBottom={"mb-4"}
-                marginRight={"mr-0"}
-                textTransform={"normal-case"}
-                fixedHeight={"h-28"}
-              />
-
-              {/* Sass */}
-              <Icon
-                IconType={Sass}
-                title="Sass"
-                width={"w-16"}
-                height={"h-16"}
-                padding={"p-0"}
-                flexDirection={"flex-col"}
-                titleMargins={"mt-4"}
-                titleSize={"text-sm sm:text-sm"}
-                marginBottom={"mb-4"}
-                marginRight={"mr-0"}
-                textTransform={"normal-case"}
-                fixedHeight={"h-28"}
-              />
-
-              {/* Bootstrap */}
-              {/* <Icon
-                IconType={Bootstrap}
-                title="Bootstrap"
-                width={"w-16"}
-                height={"h-16"}
-                padding={"p-0"}
-                flexDirection={"flex-col"}
-                titleMargins={"mt-4"}
-                titleSize={"text-sm sm:text-sm"}
-                marginBottom={"mb-4"}
-                marginRight={"mr-0"}
-                textTransform={"normal-case"}
-                fixedHeight={"h-28"}
-              /> */}
-
-              {/* Firebase */}
-              <Icon
-                IconType={Firebase}
-                title="Firebase"
-                width={"w-16"}
-                height={"h-16"}
-                padding={"p-0"}
-                flexDirection={"flex-col"}
-                titleMargins={"mt-4"}
-                titleSize={"text-sm sm:text-sm"}
-                marginBottom={"mb-4"}
-                marginRight={"mr-0"}
-                textTransform={"normal-case"}
-                fixedHeight={"h-28"}
-              />
-
-              {/* Photoshop */}
-              <Icon
-                IconType={Photoshop}
-                title="Photoshop"
-                width={"w-16"}
-                height={"h-16"}
-                padding={"p-0"}
-                flexDirection={"flex-col"}
-                titleMargins={"mt-4"}
-                titleSize={"text-sm sm:text-sm"}
-                marginBottom={"mb-4"}
-                marginRight={"mr-0"}
-                textTransform={"normal-case"}
-                fixedHeight={"h-28"}
-              />
-
-              {/* Illustrator */}
-              <Icon
-                IconType={Illustrator}
-                title="Illustrator"
-                width={"w-16"}
-                height={"h-16"}
-                padding={"p-0"}
-                flexDirection={"flex-col"}
-                titleMargins={"mt-4"}
-                titleSize={"text-sm sm:text-sm"}
-                marginBottom={"mb-4"}
-                marginRight={"mr-0"}
-                textTransform={"normal-case"}
-                fixedHeight={"h-28"}
-              />
-
-              {/* After Effects */}
-              <Icon
-                IconType={AfterEffects}
-                title="After Effects"
-                width={"w-16"}
-                height={"h-16"}
-                padding={"p-0"}
-                flexDirection={"flex-col"}
-                titleMargins={"mt-4"}
-                titleSize={"text-sm sm:text-sm"}
-                marginBottom={"mb-4"}
-                marginRight={"mr-0"}
-                textTransform={"normal-case"}
-                fixedHeight={"h-28"}
-              />
-
-              {/* Adobe XD */}
-              <Icon
-                IconType={AdobeXd}
-                title="Adobe XD"
-                width={"w-16"}
-                height={"h-16"}
-                padding={"p-0"}
-                flexDirection={"flex-col"}
-                titleMargins={"mt-4"}
-                titleSize={"text-sm sm:text-sm"}
-                marginBottom={"mb-4"}
-                marginRight={"mr-0"}
-                textTransform={"normal-case"}
-                fixedHeight={"h-28"}
-              />
             </div>
           </section>
 
@@ -963,283 +719,67 @@ export default function Home({ publications }) {
             ref={myWorkRef}
           >
             {/* My Work header */}
-            <h2 className="text-5xl">My Work</h2>
+            <h2 className="text-5xl">No-code AI builder - coming soon...</h2>
             <hr className="bg-brand w-40 h-1.5 mt-4 mb-6 border-0"></hr>
 
             {/* Featured Projects Container */}
             <div className="flex flex-col w-full mb-12">
               {/* Project One */}
               <FeaturedProjectCard
-                title={"Smylo"}
+                title={"Luup"}
                 status={"Join the Waitlist"}
-                description={`Keep your life on track and never miss another important date again`}
+                description={`Build no-code AI flows that scale to production`}
                 float={`right-0`}
                 flexDirection={`flex-col lg:flex-row`}
                 imgWidth={"1366"}
                 imgHeight={"666"}
-                imgSrc={"/projects/smylo.png"}
-                liveLink={"https://smylo.co/"}
+                imgSrc={"/projects/Luup_demo.jpeg"}
+                liveLink={"https://forms.gle/wRKZBj9eR8MpmEeN9"}
                 repoLink={null}
-                stack={
-                  <>
-                    <Icon
-                      IconType={Html}
-                      title="HTML"
-                      columnSizing={"w-auto"}
-                      width={"w-6"}
-                      height={"h-6"}
-                      flexDirection={"flex-row"}
-                      padding={"p-0"}
-                      titleMargins={"my-0 ml-1"}
-                      titleSize={"text-sm"}
-                      marginBottom={"mb-4"}
-                      marginRight={"mr-3"}
-                      textTransform={"uppercase"}
-                      fixedHeight={"h-auto"}
-                    />
-
-                    <Icon
-                      IconType={Tailwind}
-                      title="Tailwind"
-                      columnSizing={"w-auto"}
-                      width={"w-6"}
-                      height={"h-6"}
-                      flexDirection={"flex-row"}
-                      padding={"p-0"}
-                      titleMargins={"my-0 ml-1"}
-                      titleSize={"text-sm"}
-                      marginBottom={"mb-4"}
-                      marginRight={"mr-3"}
-                      textTransform={"uppercase"}
-                      fixedHeight={"h-auto"}
-                    />
-
-                    <Icon
-                      IconType={ReactJs}
-                      title="React"
-                      columnSizing={"w-auto"}
-                      width={"w-6"}
-                      height={"h-6"}
-                      flexDirection={"flex-row"}
-                      padding={"p-0"}
-                      titleMargins={"my-0 ml-1"}
-                      titleSize={"text-sm"}
-                      marginBottom={"mb-4"}
-                      marginRight={"mr-3"}
-                      textTransform={"uppercase"}
-                      fixedHeight={"h-auto"}
-                    />
-
-                    <Icon
-                      IconType={NextJs}
-                      title="Next"
-                      columnSizing={"w-auto"}
-                      width={"w-6"}
-                      height={"h-6"}
-                      flexDirection={"flex-row"}
-                      padding={"p-0"}
-                      titleMargins={"my-0 ml-1"}
-                      titleSize={"text-sm"}
-                      marginBottom={"mb-4"}
-                      marginRight={"mr-3"}
-                      textTransform={"uppercase"}
-                      fixedHeight={"h-auto"}
-                    />
-
-                    <Icon
-                      IconType={Supabase}
-                      title="Supabase"
-                      columnSizing={"w-auto"}
-                      width={"w-6"}
-                      height={"h-6"}
-                      flexDirection={"flex-row"}
-                      padding={"p-0"}
-                      titleMargins={"my-0 ml-1"}
-                      titleSize={"text-sm"}
-                      marginBottom={"mb-4"}
-                      marginRight={"mr-3"}
-                      textTransform={"uppercase"}
-                      fixedHeight={"h-auto"}
-                    />
-                  </>
-                }
               />
               {/* Project Two */}
               <FeaturedProjectCard
-                title={"ColorHub"}
-                status={"V2 Just Launched"}
-                description={`Find the perfect palette for your next perfect. pick it, preview it and paste it right into your code.`}
+                title={"LLM Integrations"}
+                status={"Join the waitlist"}
+                description={`Offers integration with every major LLM. Unlock the power of every LLM offered by: OpenAI, Cohere, Azure, Replicate and even custom trained LLMs`}
                 float={`right-0`}
                 flexDirection={`flex-col lg:flex-row-reverse`}
                 imgWidth={"1366"}
                 imgHeight={"666"}
-                imgSrc={"/projects/colorhub.png"}
-                liveLink={"https://colorhub.app/"}
+                imgSrc={"/projects/multi_llm.jpeg"}
+                liveLink={"https://forms.gle/wRKZBj9eR8MpmEeN9"}
                 repoLink={null}
-                stack={
-                  <>
-                    <Icon
-                      IconType={Html}
-                      title="HTML"
-                      columnSizing={"w-auto"}
-                      width={"w-6"}
-                      height={"h-6"}
-                      flexDirection={"flex-row"}
-                      padding={"p-0"}
-                      titleMargins={"my-0 ml-1"}
-                      titleSize={"text-sm"}
-                      marginBottom={"mb-4"}
-                      marginRight={"mr-3"}
-                      textTransform={"uppercase"}
-                      fixedHeight={"h-auto"}
-                    />
-
-                    <Icon
-                      IconType={Tailwind}
-                      title="Tailwind"
-                      columnSizing={"w-auto"}
-                      width={"w-6"}
-                      height={"h-6"}
-                      flexDirection={"flex-row"}
-                      padding={"p-0"}
-                      titleMargins={"my-0 ml-1"}
-                      titleSize={"text-sm"}
-                      marginBottom={"mb-4"}
-                      marginRight={"mr-3"}
-                      textTransform={"uppercase"}
-                      fixedHeight={"h-auto"}
-                    />
-
-                    <Icon
-                      IconType={ReactJs}
-                      title="React"
-                      columnSizing={"w-auto"}
-                      width={"w-6"}
-                      height={"h-6"}
-                      flexDirection={"flex-row"}
-                      padding={"p-0"}
-                      titleMargins={"my-0 ml-1"}
-                      titleSize={"text-sm"}
-                      marginBottom={"mb-4"}
-                      marginRight={"mr-3"}
-                      textTransform={"uppercase"}
-                      fixedHeight={"h-auto"}
-                    />
-
-                    <Icon
-                      IconType={NextJs}
-                      title="Next"
-                      columnSizing={"w-auto"}
-                      width={"w-6"}
-                      height={"h-6"}
-                      flexDirection={"flex-row"}
-                      padding={"p-0"}
-                      titleMargins={"my-0 ml-1"}
-                      titleSize={"text-sm"}
-                      marginBottom={"mb-4"}
-                      marginRight={"mr-3"}
-                      textTransform={"uppercase"}
-                      fixedHeight={"h-auto"}
-                    />
-                  </>
-                }
               />
               {/* Project Three */}
               <FeaturedProjectCard
-                title={"ProfileMe.dev"}
-                status={"Open Source"}
-                description={`Create an amazing GitHub profile complete with skills icons, stat graphs and more in just a couple of minutes.`}
+                title={"VectorDB Integrations"}
+                status={"Join the waitlist"}
+                description={`Harness the power of limitless customization in vector search through our integrations with : ChromaDB, Pinecone, Qdrant, Vectara, Supabase, Weaviate and more`}
                 float={`right-0`}
                 flexDirection={`flex-col lg:flex-row`}
                 imgWidth={"1366"}
                 imgHeight={"666"}
-                imgSrc={"/projects/profileme.png"}
-                liveLink={"https://profileme.dev"}
-                repoLink={"https://github.com/danielcranney/profileme.dev"}
-                stack={
-                  <>
-                    <Icon
-                      IconType={Html}
-                      title="HTML"
-                      columnSizing={"w-auto"}
-                      width={"w-6"}
-                      height={"h-6"}
-                      flexDirection={"flex-row"}
-                      padding={"p-0"}
-                      titleMargins={"my-0 ml-1"}
-                      titleSize={"text-sm"}
-                      marginBottom={"mb-4"}
-                      marginRight={"mr-3"}
-                      textTransform={"uppercase"}
-                      fixedHeight={"h-auto"}
-                    />
-
-                    <Icon
-                      IconType={Tailwind}
-                      title="Tailwind"
-                      columnSizing={"w-auto"}
-                      width={"w-6"}
-                      height={"h-6"}
-                      flexDirection={"flex-row"}
-                      padding={"p-0"}
-                      titleMargins={"my-0 ml-1"}
-                      titleSize={"text-sm"}
-                      marginBottom={"mb-4"}
-                      marginRight={"mr-3"}
-                      textTransform={"uppercase"}
-                      fixedHeight={"h-auto"}
-                    />
-
-                    <Icon
-                      IconType={ReactJs}
-                      title="React"
-                      columnSizing={"w-auto"}
-                      width={"w-6"}
-                      height={"h-6"}
-                      flexDirection={"flex-row"}
-                      padding={"p-0"}
-                      titleMargins={"my-0 ml-1"}
-                      titleSize={"text-sm"}
-                      marginBottom={"mb-4"}
-                      marginRight={"mr-3"}
-                      textTransform={"uppercase"}
-                      fixedHeight={"h-auto"}
-                    />
-
-                    <Icon
-                      IconType={NextJs}
-                      title="Next"
-                      columnSizing={"w-auto"}
-                      width={"w-6"}
-                      height={"h-6"}
-                      flexDirection={"flex-row"}
-                      padding={"p-0"}
-                      titleMargins={"my-0 ml-1"}
-                      titleSize={"text-sm"}
-                      marginBottom={"mb-4"}
-                      marginRight={"mr-3"}
-                      textTransform={"uppercase"}
-                      fixedHeight={"h-auto"}
-                    />
-                  </>
-                }
+                imgSrc={"/projects/multi_vectordb.jpeg"}
+                liveLink={"https://forms.gle/wRKZBj9eR8MpmEeN9"}
+                repoLink={null}
               />
             </div>
 
-            {/* Other Projects header */}
-            <h2 className="text-4xl text-center">Other Projects</h2>
+
+
+            {/*
+            <h2 className="text-4xl text-center">Integrations</h2>
             <hr className="bg-brand w-40 h-1.5 mt-4 mb-6 mx-auto border-0"></hr>
             <p className="mb-16 text-lg text-center">
-              Check out some of the projects I&apos;ve been a part of...
+              Here are some of the integrations we offer
             </p>
 
-            {/* Other Projects Container */}
             <div className="grid grid-flow-row grid-rows-2 gap-4 grid-col-1 lg:grid-cols-3">
               {projects.map(function (project, i) {
                 return <ProjectCard project={project} key={i} />;
               })}
             </div>
-          </section>
+            */}</section>
 
           {/* Blog */}
           <section
@@ -1248,10 +788,44 @@ export default function Home({ publications }) {
             ref={blogRef}
           >
             {/* Blog header */}
-            <h2 className="text-5xl">Blog</h2>
+            <h2 className="text-5xl">Courses</h2>
             <hr className="bg-brand w-40 h-1.5 mt-4 mb-6 border-0"></hr>
 
-            <BlogList publications={publications} />
+
+{/*youtube embeddings*/}
+
+<div style={{ display: 'flex', justifyContent: 'space-between' }}>
+    <div style={{ flex: 1, margin: '0 10px' }}>
+        <iframe 
+            src="https://www.youtube.com/embed/xZDB1naRUlk" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen 
+            style={{ width: '100%', height: '300px' }}>
+        </iframe>
+    </div>
+    <div style={{ flex: 1, margin: '0 10px' }}>
+        <iframe 
+            src="https://www.youtube.com/embed/MD8HgJll_pk" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen 
+            style={{ width: '100%', height: '300px' }}>
+        </iframe>
+    </div>
+    <div style={{ flex: 1, margin: '0 10px' }}>
+        <iframe 
+            src="https://www.youtube.com/embed/i0u6UHGw6xg" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen 
+            style={{ width: '100%', height: '300px' }}>
+        </iframe>
+    </div>
+</div>
           </section>
 
           {/* Contact */}
@@ -1266,18 +840,18 @@ export default function Home({ publications }) {
             <div className="flex flex-col-reverse w-full md:flex-row">
               <div className="w-full mb-4 md:pl-0 md:mb-0">
                 <p className="text-lg">
-                  I&apos;m currently available to get involved in new projects,
-                  so get in touch if you&apos;d like to work together.
+                  We are currently involved in empowering companies and institutions with AI services
+                  
                 </p>
                 <p className="text-lg">
-                  Email me at{" "}
+                  Email us at{" "}
                   <Link
-                    href="mailto:danielcranney@gmail.com"
+                    href="mailto:akshath@luup.ai"
                     className="underline-link"
                   >
-                    danielcranney@gmail.com
+                    akshath@luup.ai
                   </Link>{" "}
-                  and let&apos;s talk about your project!
+
                 </p>
               </div>
             </div>
@@ -1314,10 +888,7 @@ export default function Home({ publications }) {
             </div>
 
             <div className="flex flex-col items-start md:flex-row">
-              <p className="w-auto mb-4 md:mb-0">
-                &copy; {new Date().getFullYear()} - Designed and built by Daniel
-                Cranney
-              </p>
+              
 
               <div className="flex md:hidden">
                 <span className="mr-2">
