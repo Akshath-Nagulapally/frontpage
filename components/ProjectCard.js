@@ -10,7 +10,7 @@ const ProjectCard = ({ testimonialData }) => {
     <div className="flex flex-col w-full rounded-md bg-white dark:bg-mid px-7 py-7 shadow-md shadow-light/10 dark:shadow-dark">
   
       {/* Testimonial Text */}
-      <p className="text-center italic mb-4">"{testimonial}"</p>
+      <p className="text-center italic mb-4">&quot;{testimonial}&quot;</p>
 
       {/* Name */}
       <p className="text-center font-bold">{name}</p>

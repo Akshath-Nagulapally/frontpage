@@ -640,8 +640,8 @@ export default function Home({ publications }) {
               <div className="flex flex-col-reverse items-start w-full md:flex-row">
                 <div className="flex flex-col w-full md:pr-8 md:w-3/5">
                   <p className="text-lg">
-                  Our mission is to bring AI's immense potential within everyone's reach.           
-Whether you're a business seeking smarter solutions, an individual aspiring to master the intricacies of AI, or a visionary aiming to craft applications that transform industries, Luup.ai is your catalyst.
+                  Our mission is to bring AI&apos;s immense potential within everyone&apos;s reach.           
+Whether you&apos;re a business seeking smarter solutions, an individual aspiring to master the intricacies of AI, or a visionary aiming to craft applications that transform industries, Luup.ai is your catalyst.
                   </p>
                   <p></p>
                   <p className="text-lg">
@@ -651,10 +651,10 @@ Whether you're a business seeking smarter solutions, an individual aspiring to m
                   Courses to Cultivate Mastery: Education is empowerment. Our comprehensive courses, designed by industry experts, offer deep insights into the world of AI. From beginner tutorials to advanced seminars, we guide enthusiasts and professionals alike on a learning journey that demystifies AI and amplifies skills.
                   </p>
                   <p className="text-lg">
-                  Cutting Edge Customer Support Automation: In today's fast-paced world, efficiency is key. Our state-of-the-art customer support automation solutions not only speed up processes but also ensure accuracy, responsiveness, and personalized service that delights customers and empowers businesses.
+                  Cutting Edge Customer Support Automation: In today&apos;s fast-paced world, efficiency is key. Our state-of-the-art customer support automation solutions not only speed up processes but also ensure accuracy, responsiveness, and personalized service that delights customers and empowers businesses.
                   </p>
                   <p className="text-lg">
-                  Educational Tools for Scalable Applications: Dreaming of building your own AI application? Our suite of educational tools is designed to help. These aren't just theoretical resources; they're practical platforms that enable creators to build, test, and scale applications to full production, ensuring that ideas are not just conceived but also brought to fruition.
+                  Educational Tools for Scalable Applications: Dreaming of building your own AI application? Our suite of educational tools is designed to help. These aren&apos;t just theoretical resources, they&apos;re practical platforms that enable creators to build, test, and scale applications to full production, ensuring that ideas are not just conceived but also brought to fruition.
                   </p>
                 </div>
                 <div className="flex w-full h-full mb-4 md:pl-8 md:w-2/5 md:mb-0">
@@ -812,7 +812,7 @@ Whether you're a business seeking smarter solutions, an individual aspiring to m
         <iframe 
             src="https://www.youtube.com/embed/xZDB1naRUlk" 
             title="YouTube video player" 
-            frameborder="0" 
+            frameBorder="0" 
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
             allowfullscreen 
             style={{ width: '100%', height: '300px' }}>
@@ -822,7 +822,7 @@ Whether you're a business seeking smarter solutions, an individual aspiring to m
         <iframe 
             src="https://www.youtube.com/embed/MD8HgJll_pk" 
             title="YouTube video player" 
-            frameborder="0" 
+            frameBorder="0" 
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
             allowfullscreen 
             style={{ width: '100%', height: '300px' }}>
@@ -832,7 +832,7 @@ Whether you're a business seeking smarter solutions, an individual aspiring to m
         <iframe 
             src="https://www.youtube.com/embed/i0u6UHGw6xg" 
             title="YouTube video player" 
-            frameborder="0" 
+            frameBorder="0" 
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
             allowfullscreen 
             style={{ width: '100%', height: '300px' }}>
