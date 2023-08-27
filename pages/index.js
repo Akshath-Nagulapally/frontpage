@@ -280,7 +280,7 @@ export default function Home({ publications }) {
                     About
                   </button>
                 </li>
-                <li className="z-50 block py-2 list-none lg:inline-block">
+               {/*<li className="z-50 block py-2 list-none lg:inline-block">
                   <button
                     href="#"
                     className={`header_link text-xl font-semibold transition-all duration-150 ease-in-out ${
@@ -295,7 +295,7 @@ export default function Home({ publications }) {
                   >
                     Skills
                   </button>
-                </li>
+                  </li>*/}
                 <li className="z-50 block py-2 list-none lg:inline-block">
                   <button
                     href="#"
