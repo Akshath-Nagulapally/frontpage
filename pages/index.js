@@ -309,7 +309,7 @@ export default function Home({ publications }) {
                       scrollTo(myWorkRef.current);
                     }}
                   >
-                    My Work
+                    No code AI builder
                   </button>
                 </li>
                 <li className="z-50 block py-2 list-none lg:inline-block">
@@ -327,7 +327,7 @@ export default function Home({ publications }) {
                       scrollTo(blogRef.current);
                     }}
                   >
-                    Blog
+                    Courses
                   </button>
                 </li>
                 <li className="z-50 block py-2 list-none lg:inline-block">
