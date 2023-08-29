@@ -3,6 +3,10 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import ReactTypingEffect from "react-typing-effect";
+import { BubbleChat } from 'flowise-embed-react'
+import ReactDOM from 'react-dom';
+import EmbedChat from './Chatinit'; // Assuming ChatbotInit.js is in the same directory
+
 
 import Icon from "../components/Icon";
 // Icons
@@ -65,6 +69,26 @@ const handleContactClick = () => {
   window.location.href = 'mailto:akshath@luup.ai';
 };
 
+const App = () => {
+  return (
+    <div>
+      <h1>Welcome to My App</h1>
+      <EmbedChat />
+    </div>
+  );
+};
+
+
+
+//ReactDOM.render(<App />, document.getElementById('root'));
+
+{/*
+const Embed_chat = () => {
+  return (
+      <BubbleChat chatflowid="0ae3cca8-2702-49fe-884e-dbfbc7d370f1" apiHost="https://flowiseai-railway-production-6134.up.railway.app" />
+  );
+};*/}
+
 
 export default function Home({ publications }) {
   const [visibleSection, setVisibleSection] = useState();
@@ -90,6 +114,8 @@ export default function Home({ publications }) {
   const myWorkRef = useRef(null);
   const blogRef = useRef(null);
   const contactRef = useRef(null);
+
+
 
   useEffect(() => {
     const sectionRefs = [
@@ -519,6 +545,7 @@ export default function Home({ publications }) {
           </div>
         </header>
 
+
         {/* Content Container */}
         <div className="container relative z-30 mx-auto">
           {/* Hero Content */}
@@ -616,6 +643,13 @@ Whether you&apos;re a business seeking smarter solutions, an individual aspiring
                 </div>
               </div>
             </div>
+
+
+            <div>
+      <h1>Welcome to My App</h1>
+      <EmbedChat />
+    </div>
+
           </section>
 
           {/* Skills */}
