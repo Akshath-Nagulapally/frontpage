@@ -29,7 +29,7 @@ const EmbedChat = () => {
   }, []); // Empty dependency array ensures this runs once when component mounts
 
   return (
-    <div id="chatbot-placeholder">Loading Chatbot...</div>
+    <div id="chatbot-placeholder"> </div>
   );
 }
 

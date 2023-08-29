@@ -72,7 +72,6 @@ const handleContactClick = () => {
 const App = () => {
   return (
     <div>
-      <h1>Welcome to My App</h1>
       <EmbedChat />
     </div>
   );
@@ -646,7 +645,6 @@ Whether you&apos;re a business seeking smarter solutions, an individual aspiring
 
 
             <div>
-      <h1>Welcome to My App</h1>
       <EmbedChat />
     </div>
 
@@ -967,7 +965,7 @@ Whether you&apos;re a business seeking smarter solutions, an individual aspiring
                 </svg>
               </button>
               {/* Skills - Diamond 3 */}
-              <button
+              {/*<button
                 className="w-5 h-5 mb-4"
                 onClick={() => {
                   scrollTo(skillsRef.current);
@@ -985,7 +983,6 @@ Whether you&apos;re a business seeking smarter solutions, an individual aspiring
                   viewBox="0
               0 24 24"
                 >
-                  {/* Fill */}
                   <path
                     className={`fill-current origin-center transform transition duration-200 ease-in-out group-hover:text-dark dark:group-hover:text-white group-hover:rotate-90 ${
                       visibleSection === "skills"
@@ -994,7 +991,6 @@ Whether you&apos;re a business seeking smarter solutions, an individual aspiring
                     }`}
                     d="M5.64 5.64h12.73v12.73H5.64z"
                   />
-                  {/* Border */}
                   <path
                     className={`fill-current origin-center transform transition duration-500 ease-in-out dark:group-hover:text-white group-hover:text-dark group-hover:rotate-45 group-hover:opacity-100 ${
                       visibleSection === "skills"
@@ -1004,7 +1000,7 @@ Whether you&apos;re a business seeking smarter solutions, an individual aspiring
                     d="M12 22.41L1.59 12 12 1.59 22.41 12zM4.41 12L12 19.59 19.59 12 12 4.41z"
                   />
                 </svg>
-              </button>
+              </button>*/}
               {/* My Work - Diamond 4 */}
               <button
                 className="w-5 h-5 mb-4"
