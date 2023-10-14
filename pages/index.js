@@ -703,7 +703,7 @@ Whether you&apos;re a business seeking smarter solutions, an individual aspiring
             ref={myWorkRef}
           >
             {/* My Work header */}
-            <h2 className="text-5xl">No-code AI builder - coming soon...</h2>
+            <h2 className="text-5xl">No-code AI builder - Now Live</h2>
             <hr className="bg-brand w-40 h-1.5 mt-4 mb-6 border-0"></hr>
 
             {/* Featured Projects Container */}
@@ -718,7 +718,7 @@ Whether you&apos;re a business seeking smarter solutions, an individual aspiring
                 imgWidth={"1366"}
                 imgHeight={"666"}
                 imgSrc={"/projects/Luup_demo.jpeg"}
-                liveLink={"https://forms.gle/wRKZBj9eR8MpmEeN9"}
+                liveLink={"https://luupbuilder.vercel.app/"}
                 repoLink={null}
               />
               {/* Project Two */}
@@ -731,7 +731,7 @@ Whether you&apos;re a business seeking smarter solutions, an individual aspiring
                 imgWidth={"1366"}
                 imgHeight={"666"}
                 imgSrc={"/projects/multi_llm.jpeg"}
-                liveLink={"https://forms.gle/wRKZBj9eR8MpmEeN9"}
+                liveLink={"https://luupbuilder.vercel.app/"}
                 repoLink={null}
               />
               {/* Project Three */}
@@ -744,7 +744,7 @@ Whether you&apos;re a business seeking smarter solutions, an individual aspiring
                 imgWidth={"1366"}
                 imgHeight={"666"}
                 imgSrc={"/projects/multi_vectordb.jpeg"}
-                liveLink={"https://forms.gle/wRKZBj9eR8MpmEeN9"}
+                liveLink={"https://luupbuilder.vercel.app/"}
                 repoLink={null}
               />
             </div>
