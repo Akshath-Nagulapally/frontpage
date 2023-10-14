@@ -711,7 +711,7 @@ Whether you&apos;re a business seeking smarter solutions, an individual aspiring
               {/* Project One */}
               <FeaturedProjectCard
                 title={"Luup"}
-                status={"Join the Waitlist"}
+                status={"Sign up now"}
                 description={`Build no-code AI flows that scale to production`}
                 float={`right-0`}
                 flexDirection={`flex-col lg:flex-row`}
@@ -724,7 +724,7 @@ Whether you&apos;re a business seeking smarter solutions, an individual aspiring
               {/* Project Two */}
               <FeaturedProjectCard
                 title={"LLM Integrations"}
-                status={"Join the waitlist"}
+                status={"Sign up now"}
                 description={`Offers integration with every major LLM. Unlock the power of every LLM offered by: OpenAI, Cohere, Azure, Replicate and even custom trained LLMs`}
                 float={`right-0`}
                 flexDirection={`flex-col lg:flex-row-reverse`}
@@ -737,7 +737,7 @@ Whether you&apos;re a business seeking smarter solutions, an individual aspiring
               {/* Project Three */}
               <FeaturedProjectCard
                 title={"VectorDB Integrations"}
-                status={"Join the waitlist"}
+                status={"Sign up now"}
                 description={`Harness the power of limitless customization in vector search through our integrations with : ChromaDB, Pinecone, Qdrant, Vectara, Supabase, Weaviate and more`}
                 float={`right-0`}
                 flexDirection={`flex-col lg:flex-row`}
