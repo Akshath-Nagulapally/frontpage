@@ -645,7 +645,6 @@ Whether you&apos;re a business seeking smarter solutions, an individual aspiring
 
 
             <div>
-      <EmbedChat />
     </div>
 
           </section>
